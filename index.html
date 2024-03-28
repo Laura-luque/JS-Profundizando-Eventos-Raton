@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Magarín">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="remove-event-signal.js"></script>
+    <script src="remove-event-listener.js"></script>
+    <title>Magarín. Capturing-phase, bubbling-phase, once, remove, signal</title>
+</head>
+<body>
+    <noscript>Activa JavaScript en tu navegador</noscript>
+    <div id="contenedor">
+        <h3>Añade eventos</h3>
+
+        <button id="limpia">Limpia</button>
+        <br>
+        <br>
+       
+        <button class="solo-una-vez">Solo una vez...</button>
+        <button class="multiplica-suma">11</button>
+        <button class="suma-multiplica">11</button>
+        <br>
+        <br>
+
+        <h3>Elimina eventos con signal</h3>
+        <button class="mouse-event-1">mouseenter</button>
+        <button class="mouse-event-1">mousewheel</button>
+        <button class="remove-mouse-signal">remove mouse</button> 
+
+        <h3>Elimina eventos con removeEventListener</h3>
+        <button class="mouse-event-2">mouseover</button>
+        <button class="mouse-event-2">mouseup</button>
+        <button class="remove-event-listener">remove mouse</button>
+
+        <br>
+        <br>
+        <textarea  id="textarea" cols="30" rows="10">        </textarea>
+    </div>
+</body>
+</html>
